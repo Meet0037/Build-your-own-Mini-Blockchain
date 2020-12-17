@@ -61,4 +61,42 @@ To review, our blockchain contains the following:
     Chain: A list that that holds all the blocks inside the blockchain.
     Unverified Transactions: A list that represents all the unverified transactions before being passed into a block.
     Genesis Block: A block automatically generated when the blockchain is initialized. (I mean first block in the chain)
+    
+-------------------------------
+Adding Blocks to the Blockchain
+-------------------------------
 
+Now that we have everything in place, let’s begin adding blocks to the blockchain.
+
+--------------------------
+Checking for a Broken Chain
+---------------------------
+
+Hashing helps to maintain the integrity of the blockchain. In this exercise, we will see this in action. Let’s write a .validate_chain() method that checks to see if blocks are linked to each other properly.
+
+In order to validate the entire blockchain, we must loop through each of the blocks stored inside the blockchain itself. Then, we will check through each of the blocks to ensure that the previous hash value matches with the hash value inside our previous block.
+
+
+--------------------
+Hacking the Chain
+--------------------
+
+Now we can use the code in our previous exercise to spot a broken link. Let’s try tampering with the contents of the block and see how that creates a mismatch between hash values.
+
+-----------------------
+Nonce and Proof-of-Work
+-----------------------
+
+Let’s review the concepts of nonce and proof of work. In this exercise, we will implement an example that demonstrates the difficulty of the math problem that helps protect the blockchain from potential attackers.
+
+---------------------------
+Implementing Proof-of-Work
+-----------------------------
+
+Now that we’ve seen a simple example of Proof-of-Work, let’s integrate it into our blockchain! Complete the proof_of_work() method inside the Blockchain class. 
+
+-----------------------------------
+Adding Blocks to the Chain Securely
+------------------------------------
+
+Now that we have implemented our Proof-of-Work method, we can now work on adding new blocks securely.
