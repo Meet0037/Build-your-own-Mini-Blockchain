@@ -60,5 +60,5 @@ To review, our blockchain contains the following:
 
     Chain: A list that that holds all the blocks inside the blockchain.
     Unverified Transactions: A list that represents all the unverified transactions before being passed into a block.
-    Genesis Block: A block automatically generated when the blockchain is initialized.
+    Genesis Block: A block automatically generated when the blockchain is initialized. (I mean first block in the chain)
 
