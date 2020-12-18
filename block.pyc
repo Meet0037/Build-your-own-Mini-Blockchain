@@ -1,0 +1,13 @@
+�
+PHO[c@s3ddlZddlmZddd��YZdS(i����N(tsha256tBlockcBs#eZd�Zd�Zd�ZRS(cCs@tjj�|_||_||_d|_|j�|_dS(Ni(tdatetimetnowt
+time_stampttransactionst
+previous_hashtnoncet
+generate_hashthash(tselfRR((s//home/ccuser/workspace/blank-workspace/block.pyt__init__s
+			cCsRt|j�t|j�t|j�t|j�}t|j��}|j�S(N(tstrRRRRRtencodet	hexdigest(R
+tblock_headert
+block_hash((s//home/ccuser/workspace/blank-workspace/block.pyRs6cCs?d|jfGHd|jfGHd|j�fGHd|jfGHdS(Ns
+timestamp:s
+transactions:s
+current hash:sprevious hash:(RRRR(R
+((s//home/ccuser/workspace/blank-workspace/block.pytprint_contentss(t__name__t
+__module__RRR(((s//home/ccuser/workspace/blank-workspace/block.pyRs		((RthashlibRR(((s//home/ccuser/workspace/blank-workspace/block.pyt<module>s
