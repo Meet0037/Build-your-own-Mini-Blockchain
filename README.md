@@ -16,10 +16,6 @@ This transaction is best represented in the form of a Python dictionary, with ke
 
 These transactions are all stored inside the mempool, a pool of transactions that miners reference when selecting the set of transactions they want to verify.
 
-1.
-
-Let’s create a transaction and add it to the mempool. Name the new transaction my_transaction and add amount, sender, and receiver as key-values.
-
 
 ----------------
 Creating Blocks
