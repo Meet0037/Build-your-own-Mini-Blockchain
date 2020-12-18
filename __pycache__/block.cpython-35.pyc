@@ -1,0 +1,15 @@
+
+�r[!�@s3ddlZddlmZGdd�d�ZdS)�N)�sha256c@s4eZdZdd�Zdd�Zdd�ZdS)�BlockcCs@tjj�|_||_||_d|_|j�|_dS)Nr)�datetimeZnow�
+time_stamp�transactions�
+previous_hash�nonce�
+generate_hash�hash)�selfrr�r�G/home/ccuser/workspace/blockchain-in-python-blockchain-summary/block.py�__init__s
+			zBlock.__init__cCsRt|j�t|j�t|j�t|j�}t|j��}|j�S)N)�strrrrrr�encodeZ	hexdigest)rZblock_headerZ
+block_hashrrr
+r	s6zBlock.generate_hashcCsGtd|j�td|j�td|j��td|j�dS)Nz
+timestamp:z
+transactions:z
+current hash:zprevious hash:)�printrrr	r)rrrr
+�print_contentsszBlock.print_contentsN)�__name__�
+__module__�__qualname__rr	rrrrr
+rsr)rZhashlibrrrrrr
+�<module>s
