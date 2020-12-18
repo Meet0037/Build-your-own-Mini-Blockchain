@@ -1,0 +1,19 @@
+�R[�@s'ddlmZGdd�d�ZdS)�)�Blockc@s[eZdZdd�Zdd�Zdd�Zdd�Zd	d
+�Zddd
+�ZdS)�
+BlockchaincCs g|_g|_|j�dS)N)�chainZunconfirmed_transactions�
+genesis_block)�self�r�L/home/ccuser/workspace/blockchain-in-python-blockchain-summary/blockchain.py�__init__s		zBlockchain.__init__cCs3g}t|d�}|j�|jj|�dS)N�0)r�
+generate_hashr�append)r�transactionsrrrrr	s
+zBlockchain.genesis_blockcCsJ|jt|j�dj}t||�}|j�|jj|�dS)N�)r�len�hashrrr)rr
+�
+previous_hashZ	new_blockrrr�	add_blocks
+zBlockchain.add_blockcCsQxJtt|j��D]3}|j|}tdj||��|j�qWdS)NzBlock {} {})�rangerr�print�formatZprint_contents)r�iZ
+current_blockrrr�print_blockss
+zBlockchain.print_blockscCs�x�tdt|j��D]j}|j|}|j|d}|j|j�kr`td�dS|j|j�krtd�dSqWdS)Nrz*Current hash does not equal generated hashFz!Previous block's hash got changedT)rrrrrrr)rrZcurrentZpreviousrrr�validate_chains
+
+
+zBlockchain.validate_chain�cCsU|j�}x9|dd�d|krG|jd7_|j�}qWd|_|S)Nrr
+rr)rZnonce)r�blockZ
+difficultyZproofrrr�
+proof_of_work(s	zBlockchain.proof_of_workN)	�__name__�
+__module__�__qualname__r	rrrrrrrrrrsrN)rrrrrrr�<module>s
